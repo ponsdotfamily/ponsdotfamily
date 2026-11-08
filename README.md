@@ -146,7 +146,7 @@ Build and deployment notes for the live factory (compiler version, optimizer set
 ## Design notes
 
 1. **One transaction launch** — token, pool, LP lock, and optional seed buy share a single `launchToken` call so frontend wallets only sign once.
-2. **Fixed `…dddd` addresses** — every launched token address ends in `dddd`.
+2. **Fixed `…bbbb` addresses** — every launched token address ends in `bbbb`.
 3. **One-sided V3 liquidity** — full supply sits on one side of the range; paired asset depth grows as traders buy in.
 4. **Temporary buy pressure limits** — restriction window lives on the token; plain ERC-20 behavior resumes afterward.
 5. **Graduation without fake depth** — status is derived from locked position principal, not arbitrary wallet balances.
