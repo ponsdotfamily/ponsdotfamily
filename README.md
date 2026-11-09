@@ -133,6 +133,16 @@ OpenZeppelin Contracts vendored for this build (same compiler settings as the li
 | `interfaces/IERC1363.sol` | ERC-1363 interface referenced by SafeERC20 |
 | `interfaces/draft-IERC6093.sol` | Custom ERC-20 error definitions |
 
+## Build
+
+Install [Foundry](https://book.getfoundry.sh/getting-started/installation), then compile the vendored sources with:
+
+```shell
+forge build
+```
+
+The repository pins the compiler and optimizer settings from `contract-meta.json` in `foundry.toml`; no dependency installation is required.
+
 ## Artifact files
 
 ### `abi.json`

@@ -1,0 +1,11 @@
+[profile.default]
+src = "contracts/src"
+libs = ["contracts/lib"]
+solc_version = "0.8.30"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 300
+via_ir = true
+remappings = [
+  "@openzeppelin/contracts/=contracts/lib/openzeppelin-contracts/contracts/",
+]
